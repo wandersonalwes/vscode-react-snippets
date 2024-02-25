@@ -1,0 +1,115 @@
+{
+  "React Component": {
+    "scope": "javascript,typescriptreact",
+    "prefix": "rcf",
+    "body": [
+      "import styles from './$2.module.css'",
+      "",
+      "export const $2 = () => {", 
+      "\treturn (",
+      "\t\t<div className={styles.container}>",
+      "\t\t\t<p>$2</p>",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      ""
+    ],
+  },
+  "React Functional without style": {
+    "scope": "javascript,typescriptreact",
+    "prefix": "rsc",
+    "body": [
+      "export const ${TM_FILENAME_BASE/^.+\\/(.*)$/$1/} = () => {", 
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<p>${TM_FILENAME_BASE/^.+\\/(.*)$/$1/}</p>",
+      "\t\t</div>",
+      "\t)",
+      "}"
+    ],
+  },
+  "Component Props": {
+    "scope": "javascript,typescriptreact",
+    "prefix": "rcp",
+    "body": [
+      "export type ${TM_FILENAME_BASE/^.+\\/(.*)$/$1/} = {",
+      "\t$1",
+      "}"
+    ],
+  },
+  "Next.js Component Props": {
+    "scope": "javascript,typescriptreact",
+    "prefix": "necp",
+    "body": [
+      "export type ${TM_FILENAME_BASE/(^|-)(\\w)/${2:/capitalize}/g}Props = {",
+      "\tchildren: React.ReactNode",
+      "}"
+    ],
+  },
+  "Next.js Layout": {
+    "scope": "javascript,typescriptreact",
+    "prefix": "nel",
+    "body": [
+      "export default function $1Layout ({ children }: { children: React.ReactNode }) {", 
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t{children}",
+      "\t\t</div>",
+      "\t)",
+      "}"
+    ],
+  },
+  "Next.js Page": {
+    "scope": "javascript,typescriptreact",
+    "prefix": "nep",
+    "body": [
+      "export default function $1Page () {", 
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$2",
+      "\t\t</div>",
+      "\t)",
+      "}"
+    ],
+  },
+  "Next.js Component": {
+    "scope": "javascript,typescriptreact",
+    "prefix": "nec",
+    "body": [
+      "export const ${TM_FILENAME_BASE/(^|-)(\\w)/${2:/capitalize}/g}  = () => {", 
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<p>${TM_FILENAME_BASE/(^|-)(\\w)/${2:/capitalize}/g}</p>",
+      "\t\t</div>",
+      "\t)",
+      "}"
+    ],
+  },
+  "Next.js Component Full": {
+    "scope": "javascript,typescriptreact",
+    "prefix": "necf",
+    "body": [
+      "export type ${TM_FILENAME_BASE/(^|-)(\\w)/${2:/capitalize}/g}Props = {",
+      "\tchildren: React.ReactNode",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE/(^|-)(\\w)/${2:/capitalize}/g} = (props: ${TM_FILENAME_BASE/(^|-)(\\w)/${2:/capitalize}/g}Props) => {",
+      "\tconst { children } = props",
+      "", 
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<p>${TM_FILENAME_BASE/(^|-)(\\w)/${2:/capitalize}/g}</p>",
+      "\t\t\t{children}"
+      "\t\t</div>",
+      "\t)",
+      "}"
+    ],
+  },
+  "Export File": {
+    "scope": "javascript,typescriptreact,typescript",
+    "prefix": "exbf",
+    "body": [
+      "export * '${TM_DIRECTORY/^.+\\/(.*)$/$1/}'"
+    ],
+  },
+}
