@@ -2,7 +2,7 @@
   <img src="./images/icon.png" width="50" height="50">
   <h2 style="text-align:center">Wanderson Alwes - React Snippets</h2>
 
-  <a href="https:// hmarketplace.visualstudio.com/items?itemName=wandersonalwes.wanderson-alwes-react-snippets" target="_blank">
+  <a href="https://marketplace.visualstudio.com/items?itemName=wandersonalwes.wanderson-alwes-react-snippets" target="_blank">
     <img src="https://img.shields.io/badge/Download-React%20Snippets-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=FFFFFF" />
   </a>
 </div>
