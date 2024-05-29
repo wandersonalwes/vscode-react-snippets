@@ -2,9 +2,13 @@
   "name": "wanderson-alwes-react-snippets",
   "displayName": "Wanderson Alwes - React Snippets",
   "publisher": "wandersonalwes",
-  "icon": "./images/icon.png",
+  "icon": "images/icon.png",
   "description": "React Snippets for Visual Studio Code",
   "version": "0.0.2",
+  "repository": {
+    "url": "https://github.com/wandersonalwes/vscode-react-snippets"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.86.0"
   },
