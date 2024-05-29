@@ -99,7 +99,7 @@
       "\treturn (",
       "\t\t<div>",
       "\t\t\t<p>${TM_FILENAME_BASE/(^|-)(\\w)/${2:/capitalize}/g}</p>",
-      "\t\t\t{children}"
+      "\t\t\t{children}",
       "\t\t</div>",
       "\t)",
       "}"
