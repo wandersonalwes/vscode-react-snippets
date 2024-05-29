@@ -7,6 +7,10 @@
   </a>
 </div>
 
+## Example
+
+<img src="./images/example.gif" />
+
 ## Snippets
 
 | Snippet | Description                                                                                           |
