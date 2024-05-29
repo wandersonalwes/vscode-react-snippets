@@ -2,8 +2,9 @@
   "name": "wanderson-alwes-react-snippets",
   "displayName": "Wanderson Alwes - React Snippets",
   "publisher": "wandersonalwes",
-  "description": "",
-  "version": "0.0.1",
+  "icon": "./images/icon.png",
+  "description": "React Snippets for Visual Studio Code",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.86.0"
   },
