@@ -4,7 +4,11 @@
   "publisher": "wandersonalwes",
   "icon": "images/icon.png",
   "description": "React Snippets for Visual Studio Code",
-  "version": "0.0.2",
+  "version": "0.0.4",
+  "scripts": {
+    "build": "vsce package",
+    "publish": "vsce publish"
+  },
   "repository": {
     "url": "https://github.com/wandersonalwes/vscode-react-snippets"
   },
@@ -18,9 +22,11 @@
   "contributes": {
     "snippets": [
       {
-        "language": "en-US",
         "path": "./snippets/snippets.code-snippets"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.29.0"
   }
 }
